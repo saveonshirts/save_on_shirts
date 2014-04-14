@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require jquery.filestyle.mini.js
+//= require jquery.flexslider-min.js
+//= require jquery.min.js
+//= require jquery.selectBox.min.js
+//= require jquery-ui.min.js
+//= require placeholder.js
+//= require scripts.js
 //= require_tree .

@@ -1,0 +1,368 @@
+<!doctype html>
+<!--[if IE 8]>    <html lang="en" class="ie ie8 lte9 lte8">      <![endif]-->
+<!--[if IE 9]>    <html lang="en" class="ie ie9 lte9">           <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en">	             <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1024" />
+	<title>Save on Shirts</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.selectBox.css" />
+	<link rel="stylesheet" type="text/css" href="css/flexslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/fonts.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.selectBox.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/jquery.filestyle.mini.js"></script>
+	<script type="text/javascript" src="js/placeholder.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body>
+<div id="page">
+
+<header>
+	<div class="container cf">
+		<a href="#"><%= image_tag "logo.png"%></a>
+		<div class="holder">
+			<div class="left-part">
+				<span>Order Online</span>
+				<span><%=image_tag "free-shipping.png"%></span>
+			</div>
+			<div class="right-part">
+				<div class="panel cf">
+					<div>
+						<a href="#">Cart:  $0.00</a>
+						<a href="#">Sign Up</a>
+	s					<a href="#">Login</a>
+					</div>
+				</div>
+				<span class="call-us">Call us @<a href="tel:1%844%865%2966">1.844.865.2966</a></span>
+			</div>
+			<nav class="nav cf">
+				<ul class="navigation">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">T-shirts</a></li>
+					<li><a href="#">Hoodies</a></li>
+					<li><a href="#">Sweatshirts</a></li>
+					<li><a href="#">Tank Tops</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+<section>
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+				<%= image_tag "baner.jpg" %>
+			</li>
+			<li>
+				<%= image_tag "baner.jpg"%>
+			</li>
+			<li>
+				<%= image_tag "baner.jpg"%>
+			</li>
+		</ul>
+	</div>
+</section>
+
+<section class="order-section">
+	<div class="container">
+		<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">T-Shirts</a></li>
+				<li><a href="#tabs-2">Hoodies</a></li>
+				<li><a href="#tabs-3">Sweatshirts</a></li>
+				<li><a href="#tabs-4">Tank Tops</a></li>
+			</ul>
+			<div id="tabs-1">
+				<div class="order-content">
+					<%= image_tag"img-shirt.jpg"%>
+					
+					<h2 class="title-section">Customize your T-shirt</h2>
+		
+					<form action="#" id="order-form">
+						<div class="holder-row shorter cf">
+							<span class="point">1</span>
+							<div class="box with-slider">
+								<span>Short <br />Sleeve</span>
+								<div class="slider-box">
+									<div class="slider"></div>
+								</div>
+								<span>Long <br />Sleeve</span>
+								<div class="tooltip">
+									<%= image_tag "icon-tooltip.png"%>
+									<div class="tooltip-info">Slide the sliders to choose your style!</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="holder-row shorter cf">
+							<span class="point">2</span>
+							<div class="box second with-slider">
+								<span>Crew <br />Neck</span>
+								<div class="slider-box">
+									<div class="slider"></div>
+								</div>
+								<span class="smaller">V-Neck</span>
+							</div>
+						</div>
+		
+						<div class="holder-row shorter cf">
+							<span class="point">3</span>
+							<div class="box">
+								<span class="smaller">Brand</span>
+								<select name="brand" id="brand">
+									<option value="1">Gildan Ultra Cotton</option>
+									<option value="2">American Apparel Fine Jersey</option>
+									<option value="3">Gildan Soft Style</option>
+									<option value="3">Alstyle Apparel</option>
+									<option value="3">Alstyle Fitted Ringspun</option>
+									<option value="3">M & O Ring Spun</option>
+									<option value="3">Gildan Heavy Cotton</option>
+									<option value="3">M & O Gold Soft Touch</option>
+								</select>
+							</div>
+						</div>
+						<div class="holder-row shorter other cf">
+							<span class="point">4</span>
+							<div class="box size">
+								<span>Choose your Quantity</span>
+								<div class="all-input cf">
+									<div class="input-text">
+										<label for="small">Small</label>
+										<input type="text" value="" name="small" id="small">
+									</div>
+									<div class="input-text">
+										<label for="medium">Medium</label>
+										<input type="text" value="" name="medium" id="medium">
+									</div>
+									<div class="input-text">
+										<label for="large">Large</label>
+										<input type="text" value="" name="large" id="large">
+									</div>
+									<div class="input-text">
+										<label for="x-large">X-Large</label>
+										<input type="text" value="" name="x-large" id="x-large">
+									</div>
+									<div class="input-text">
+										<label for="2x-large">2X-Large</label>
+										<input type="text" value="" name="2x-large" id="2x-large">
+									</div>
+									<div class="input-text">
+										<label for="3x-large">3X-Large</label>
+										<input type="text" value="" name="3x-large" id="3x-large">
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="holder-row shorter other-select">
+							<span class="point">5</span>
+							<div class="box">
+								<span>Choose your T-shirt color</span>
+								<select name="brand" id="color">
+									<option value="1">--Basic Colours--</option>
+									<option value="2">Red</option>
+									<option value="3">Blue</option>
+									<option value="4">Yellow</option>
+									<option value="5">Black</option>
+									<option value="6">Green</option>
+									<option value="7">White</option>
+									<option value="8">Purple</option>
+									<option value="9">--blank option below for colours--</option>
+									<option value="10">&nbsp;</option>
+								</select>
+							</div>
+						</div>
+		
+						<div class="wrapper-row cf">
+							<span class="point">6</span>
+							<div class="box">
+								<div class="part-left">
+									<span>Choose your printing colors + Design Position</span>
+								</div>
+								<div class="color-options">
+									<div class="col">
+										<label for="front">Front</label>
+										<select name="front" id="front">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+										</select>
+										<select name="design-position" id="for-front">
+											<option value="0">&nbsp;</option>
+											<option value="1">Top</option>
+											<option value="2">Middle</option>
+											<option value="3">Bottom</option>
+
+										</select>
+									</div>
+									<div class="col">
+										<label for="back">Back</label>
+										<select name="back" id="back">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+										</select>
+										<select name="design-position" id="for-back">
+											<option value="0">&nbsp;</option>
+											<option value="1">Top</option>
+											<option value="2">Middle</option>
+											<option value="3">Bottom</option>
+
+										</select>
+									</div>
+									<div class="col">
+										<label for="right-sleeve">Right Sleeve</label>
+										<select name="right-sleeve" id="right-sleeve">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+										</select>
+										<select name="design-position" id="for-right-sleeve">
+											<option value="0">&nbsp;</option>
+											<option value="1">Top</option>
+											<option value="2">Middle</option>
+											<option value="3">Bottom</option>
+
+										</select>
+									</div>
+									<div class="col">
+										<label for="left-sleeve">Left Sleeve</label>
+										<select name="left-sleeve" id="left-sleeve">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+										</select>
+										<select name="design-position" id="for-left-sleeve">
+											<option value="0">&nbsp;</option>
+											<option value="1">Top</option>
+											<option value="2">Middle</option>
+											<option value="3">Bottom</option>
+
+										</select>
+									</div>	
+								</div>
+							</div>
+						</div>
+		
+						<div class="cf">
+							<div class="wrapper-left cf">
+								<div class="first-box cf">
+									<span class="point">7</span>
+									<div class="box">
+										<span>Upload your design file</span>
+										<div class="input-file">
+											<label for="design-file-1">Design file 1</label>
+											<div>
+												<input type="file" name="design-file-1" id="design-file-1">
+											</div>
+										</div>
+										<div class="input-file">
+											<label for="design-file-2">Design file 2</label>
+											<div>
+												<input type="file" name="design-file-2" id="design-file-2">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="second-box cf">
+									<span class="point">9</span>
+									<div class="box">
+										<button type="submit" name="sybmit" class="button-submit">Checkout</button>
+									</div>
+								</div>
+							</div>
+									
+							<div class="wrapper-right cf">
+								<span class="point">8</span>
+								<div class="box">
+									<span class="title">Free Shipping</span>
+									<div class="contact-details">
+										<span class="title-box">Shipping Info</span>
+
+										<div class="columns">
+											<div class="input-holder left">
+												<label for="first-name">First Name:</label>
+												<input type="text" name="first-name" placeholder="First Name:" id="first-name">
+											</div>
+											<div class="input-holder right">
+												<label for="last-name">Last Name:</label>
+												<input type="text" name="last-name" placeholder="Last Name:" id="last-name">
+											</div>
+										</div>
+
+										<div class="columns">
+											<div class="input-holder left">
+												<label for="cell">Cell #</label>
+												<input type="text" name="cell" placeholder="Cell #" id="cell">
+											</div>
+											<div class="input-holder right">
+												<label for="email">Email</label>
+												<input type="email" name="email" placeholder="Email" id="email">
+											</div>
+
+										</div>
+
+										<div class="input-holder">
+											<label for="street-address1">Street Address (line1):</label>
+											<input type="text" name="street-address1" placeholder="Street Address (line1):" id="street-address1">
+										</div>
+
+										<div class="input-holder">
+											<label for="street-address2">Street Address (line2):</label>
+											<input type="text" name="street-address2" placeholder="Street Address (line2):" id="street-address2">
+										</div>
+
+										<div class="overflow-box cf">
+											<div class="input-holder">
+												<label for="city">City:</label>
+												<input type="text" name="city" placeholder="City:" id="city">
+											</div>
+											<div class="input-holder">
+												<label for="province">Province:</label>
+												<input type="text" name="province" placeholder="Province:" id="province">
+											</div>
+											<div class="input-holder">
+												<label for="postal-code">Postal Code:</label>
+												<input type="text" name="postal-code" placeholder="Postal Code:" id="postal-code">
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</form>
+		
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="container cf">
+		<ul class="links cf">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><a href="#">T-shirts</a></li>
+			<li><a href="#">Hoodies</a></li>
+			<li><a href="#">Sweatsshirts</a></li>
+			<li><a href="#">Tank Tops</a></li>
+		</ul>
+		<div class="contact-footer">
+			<a href="#"><%image_tag"icon-facebook.png"%></a>
+			<span>Call  @<a href="tel:1.844.865.2966">1.844.865.2966</a></span>
+		</div>
+	</div>
+</footer>
+
+</div>
+</body>
+</html>

@@ -9,5 +9,10 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require flexslider.css
+ *= require fonts.css
+ *= require jquery.selectBox.css
+ *= require jquery-ui.min.css
+ *= require style.css
  *= require_tree .
  */
